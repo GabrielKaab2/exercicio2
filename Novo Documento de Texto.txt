@@ -1,0 +1,45 @@
+a. git init: Inicia um novo repositório Git no diretório atual. Ele cria um repositório vazio onde você pode começar a rastrear alterações, adicionar arquivos etc.
+
+b. git config --global user.name "turing": Define o nome do usuário globalmente no Git. O comando define o nome do usuário como "turing", que será usado nos commits.
+
+c. git add EXERCICIO.txt: Adiciona o arquivo "EXERCICIO.txt" à área de preparação do Git. Isso significa que o arquivo será incluído no próximo commit.
+
+d. git add -A: Adiciona todas as alterações e arquivos novos ou modificados ao diretório de trabalho ao índice de preparação. Isso inclui todas as alterações em arquivos existentes e novos arquivos adicionados.
+
+e. git commit -m "Adicionado nova interface": Cria um novo commit com as alterações no repositório. O argumento "-m" é usado para adicionar uma mensagem ao commit, que neste caso é "Adicionado nova interface".
+
+f. git commit: Abre o editor de texto padrão configurado no Git para criar um novo commit. Ele permite que você insira uma mensagem de commit mais longa e detalhada.
+
+g. git reset --hard HEAD: Desfaz todas as alterações no diretório de trabalho e no índice, voltando ao estado do último commit. Isso descarta permanentemente todas as alterações não commitadas.
+
+h. cd Downloads: Muda o diretório atual para "Downloads".
+
+i. pwd: Mostra o diretório atual no qual você está.
+
+j. cd ..: Navega para o diretório pai do diretório atual.
+
+k. ls: Lista os arquivos e diretórios no diretório atual.
+
+l. git pull: Atualiza o repositório local com as alterações mais recentes do repositório remoto. Ele faz o download e integra as alterações remotas ao seu branch atual.
+
+m. git push: Envia os commits locais para o repositório remoto correspondente. Isso atualiza o repositório remoto com suas alterações locais.
+
+n. git clone <<url>>: Cria uma cópia local de um repositório remoto. O comando "clone" é seguido pela URL do repositório que você deseja clonar.
+
+o. git diff: Mostra as diferenças entre o diretório de trabalho atual e o último commit. Ele destaca as alterações feitas em arquivos específicos.
+
+p. git show: Exibe informações detalhadas sobre um determinado commit, como autor, data, mensagem de commit e as alterações feitas nesse commit.
+
+a. Working Tree, Working Area:
+O Working Tree, também conhecido como Working Directory ou Working Area, refere-se ao diretório do seu sistema de arquivos onde você está trabalhando em seus arquivos. É o local onde você cria, edita e exclui arquivos e diretórios. O Working Tree contém tanto arquivos rastreados quanto não rastreados pelo Git.
+
+b. Stage Area, Commit:
+A Stage Area, também conhecida como Index ou Staging Area, é um espaço intermediário no Git, onde você prepara as alterações que deseja incluir em seu próximo commit. Após fazer modificações nos arquivos do Working Tree, você pode usar o comando git add para adicionar essas modificações à Stage Area. As alterações na Stage Area estão prontas para serem registradas em um commit.
+
+Um commit no Git é uma "fotografia" de um conjunto de alterações em um determinado momento. Ele cria um ponto na história do projeto e registra as alterações feitas nos arquivos que foram preparados na Stage Area. Ao fazer um commit, você está efetivamente salvando um instantâneo das alterações e fornecendo uma mensagem que descreve o que foi feito.
+
+c. Local Repository:
+O Local Repository, ou repositório local, é a versão do repositório Git que está armazenada em seu computador local. Ele contém todo o histórico de commits, ramos (branches), tags e outras informações relacionadas ao controle de versão do projeto. O repositório local é onde você trabalha, cria commits, faz checkout de ramos, merge e executa outras operações no Git.
+
+d. Remote Repository:
+O Remote Repository, ou repositório remoto, é uma cópia do repositório Git que está localizada em um servidor remoto, como um repositório hospedado em um serviço como o GitHub, GitLab ou Bitbucket. É uma versão compartilhada do repositório que permite que várias pessoas colaborem no mesmo projeto. O repositório remoto geralmente contém o mesmo histórico de commits e ramos que o repositório local, permitindo que as alterações sejam sincronizadas entre os desenvolvedores. Ele também serve como um local centralizado para compartilhar o código com outras pessoas e fazer backup do trabalho.
